@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
     grid-template-areas:
       "Sidediv"
       "Main";
-    grid-gap: 1.5rem;
+    grid-gap: 1rem;
     padding: 1.5em 3em;
   }
 `;

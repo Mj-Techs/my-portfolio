@@ -90,3 +90,35 @@ a:hover {
 .navbar__item:hover {
   color: turquoise;
 }
+
+.about__intro,
+.about__detail,
+.about__spoken {
+  font-size: 1.5rem;
+  /* padding: 5px; */
+}
+
+.about__certification,
+.about__language,
+.about__hobbie {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #354358;
+  border-bottom: 4px solid #00f260;
+}
+.language {
+  display: grid;
+  grid-template: 0.2fr/0.2fr 0.2fr;
+}
+@media only screen and (max-width: 550px) {
+  .language {
+    display: grid;
+    grid-template: 0.2fr/0.2fr;
+  }
+}
+
+.cricket,
+.music,
+.travel {
+  font-size: 1.5rem;
+}
