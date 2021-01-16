@@ -13,8 +13,8 @@ const About = () => {
     <Aboutwrapper className="about">
       <div>
         <h6 className="about__intro">
-          I describe my self as someone who is persistant,a quick learner and
-          loves problem solving.
+          I describe my self as someone who is <span>persistent</span>,a{" "}
+          <span>quick learner</span> and loves <span>problem solving</span>.
         </h6>
       </div>
       <div>

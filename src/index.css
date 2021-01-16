@@ -71,6 +71,9 @@ a:hover {
 }
 
 /* navbar */
+.navbar {
+  margin-top: -10px;
+}
 .navbar__items {
   display: flex;
 }
@@ -90,8 +93,14 @@ a:hover {
 .navbar__item:hover {
   color: turquoise;
 }
+.about__intro {
+  font-size: 1.3rem;
+  padding: 10px;
+}
+.about__intro > span {
+  font-weight: 600;
+}
 
-.about__intro,
 .about__detail,
 .about__spoken {
   font-size: 1.5rem;
