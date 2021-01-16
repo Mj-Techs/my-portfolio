@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap");
+a {
+  text-decoration: none;
+  color: #354548;
+}
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.sidebar__avatar {
+  margin-top: -10px;
+  height: 110px;
+  width: 120px;
+  object-fit: contain;
+  border-radius: 30px;
+}
+
+.sidebar__icon {
+  width: 25px;
+  height: 25px;
+}
+.sidebar__name {
+  font-family: "Dancing Script";
+  margin: 10px 0;
+  font-size: 2rem;
+}
+.sidebar__name > span {
+  color: green;
+}
+.sidebar__item {
+  margin-bottom: 6px;
+  padding-top: 6px;
+  height: 40px;
+  font-size: 1.3rem;
+  border-radius: 30px;
+}
+.sidebar__title {
+  background-color: whitesmoke;
+  border-radius: 30px;
+}
+.sidebar__contact {
+  background-color: #dbdddf;
+  padding: 2px 0;
+  margin: 10px -10px;
+  border-radius: 30px;
+}
+
+.sidebar__contact {
+  background-color: #dbdddf;
+  padding: 2px 0;
+}
+.sidebar__location {
+  font-size: 1.3rem;
+}
+.sidebar__email {
+  background-image: linear-gradient(to right bottom, #00f260, #0575e6);
+  border-radius: 30px;
+  color: #fff;
+  margin: 15px 25px 0px;
+  cursor: pointer;
+  transition: all 3s linear;
+}
+.sidebar__email:hover {
+  transform: scale(1.2);
+}
+.sidebar__resume:hover,
+.sidebar__github:hover {
+  background-color: #f1f1f2;
+  color: #000;
+}
+
+/* navbar */
+.navbar__items {
+  display: flex;
+}
+.navbar__active {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #354358;
+  border-bottom: 4px solid #00f260;
+}
+.navbar__item {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #354358;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.navbar__item:hover {
+  color: turquoise;
+}
