@@ -1,5 +1,6 @@
 import styled from "styled-components";
 export const Wrapper = styled.div`
+  min-width: 100vw;
   min-height: 100vh;
   background-image: linear-gradient(to right bottom, #00f260, #0575e6);
   background-attachment: fixed;
@@ -10,9 +11,9 @@ export const Wrapper = styled.div`
   grid-gap: 1rem;
 
   @media only screen and (max-width: 550px) {
-    grid-template: 0.8fr 1fr/1fr;
-    grid-gap: 1rem;
-    padding: 1.5em 3em;
+    grid-template: 0.5fr 1fr/1fr;
+    grid-gap: 1.5rem;
+    padding: 1.8em 2.5em;
   }
 `;
 export const Sidediv = styled.div`
@@ -27,4 +28,40 @@ export const Main = styled.div`
   border-radius: 20px;
   padding: 25px 15px;
   box-shadow: 0 0 10px black;
+`;
+
+export const ResumeWrapper = styled.div`
+  display: grid;
+  grid-template: 0.2fr 1fr/1fr 1fr;
+  grid-template-areas:
+    "EducationWrapper ExperienceWrapper"
+    "LanguageWrapper LanguageWrapper";
+  grid-gap: 0.4rem;
+  padding: 0.1rem 1em;
+
+  @media only screen and (max-width: 550px) {
+    grid-template: auto / 1fr;
+    grid-gap: 1rem;
+    padding: 0.5em 1em;
+    grid-template-areas:
+      "EducationWrapper" "ExperienceWrapper"
+      "LanguageWrapper";
+  }
+`;
+export const EducationWrapper = styled.div`
+  grid-area: EducationWrapper;
+`;
+export const ExperienceWrapper = styled.div`
+  grid-area: ExperienceWrapper;
+`;
+export const LanguageWrapper = styled.div`
+  display: grid;
+  grid-template: auto/1fr 1fr;
+  grid-area: LanguageWrapper;
+  grid-gap: 1rem;
+
+  @media only screen and (max-width: 550px) {
+    grid-template: auto / 1fr;
+    grid-gap: 1rem;
+  }
 `;

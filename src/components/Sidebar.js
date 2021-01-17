@@ -1,9 +1,11 @@
 import React from "react";
+import { motion } from "framer-motion";
 import linkedin from "../assets/icons/linkedin.png";
 import github from "../assets/icons/github.svg";
 import pin from "../assets/icons/pin.svg";
 import tie from "../assets/icons/tie.svg";
-import mightycoder from "../assets/mighty-coder.svg";
+// import mightycoder from "../assets/mighty-coder.svg";
+import mj from "../assets/mj.jpeg";
 import resume from "../assets/Mrityunjay_Resume.pdf";
 import "../index.css";
 
@@ -11,9 +13,27 @@ const Sidebar = () => {
   const handleEmailMe = () => {
     window.open("mailto:krmrityunjay98@gmail.com");
   };
+  const side_variants = {
+    hidden: {
+      x: "-20vw",
+    },
+    visible: {
+      x: 0,
+      transition: {
+        delay: 0.1,
+        duration: 0.5,
+        type: "spring",
+      },
+    },
+  };
   return (
-    <div className="sidebar">
-      <img src={mightycoder} alt="avatar" className="sidebar__avatar" />
+    <motion.div
+      className="sidebar"
+      variants={side_variants}
+      initial="hidden"
+      animate="visible"
+    >
+      <img src={mj} alt="avatar" className="sidebar__avatar" />
       <div className="sidebar__name">
         Mrityunjay <span>Kumar</span>{" "}
       </div>
@@ -71,7 +91,7 @@ const Sidebar = () => {
       <div className="sidebar__item sidebar__email" onClick={handleEmailMe}>
         email me
       </div>
-    </div>
+    </motion.div>
   );
 };
 
