@@ -41,7 +41,7 @@ const languages = [
   {
     icon: <IoLogoCss3 />,
     name: "CSS3",
-    level: "50",
+    level: "55",
   },
   {
     icon: <AiFillHtml5 />,
@@ -51,7 +51,7 @@ const languages = [
   {
     icon: <SiStyledComponents />,
     name: "Styled-Component",
-    level: "64",
+    level: "71",
   },
 ];
 
@@ -79,7 +79,7 @@ const tools = [
   {
     icon: <SiBootstrap />,
     name: "Bootstrap",
-    level: "45",
+    level: "50",
   },
   {
     icon: <SiHeroku />,
