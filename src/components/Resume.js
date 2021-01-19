@@ -8,8 +8,6 @@ import {
   SiRedux,
   SiJavascript,
   SiPostman,
-  SiFirebase,
-  SiJsonwebtokens,
   SiStyledComponents,
   SiHeroku,
 } from "react-icons/si";
@@ -24,67 +22,48 @@ import Bar from "./Bar";
 
 const languages = [
   {
-    icon: <FaReact />,
+    icon: <FaReact size={55} />,
     name: "React",
-    level: "75",
   },
   {
-    icon: <SiRedux />,
+    icon: <SiRedux size={55} />,
     name: "Redux",
-    level: "70",
   },
   {
-    icon: <SiJavascript />,
+    icon: <SiJavascript size={50} />,
     name: "javaScript",
-    level: "80",
   },
   {
-    icon: <IoLogoCss3 />,
+    icon: <IoLogoCss3 size={70} />,
     name: "CSS3",
-    level: "55",
   },
   {
-    icon: <AiFillHtml5 />,
+    icon: <AiFillHtml5 size={70} />,
     name: "HTML",
-    level: "50",
   },
   {
-    icon: <SiStyledComponents />,
+    icon: <SiStyledComponents size={60} />,
     name: "Styled-Component",
-    level: "71",
   },
 ];
 
 const tools = [
   {
-    icon: <FaGitSquare />,
+    icon: <FaGitSquare size={70} />,
     name: "git",
-    level: "50",
   },
   {
-    icon: <SiPostman />,
+    icon: <SiPostman size={50} />,
     name: "postman",
-    level: "80",
   },
+
   {
-    icon: <SiFirebase />,
-    name: "firebase",
-    level: "65",
-  },
-  {
-    icon: <SiJsonwebtokens />,
-    name: "jwt",
-    level: "80",
-  },
-  {
-    icon: <SiBootstrap />,
+    icon: <SiBootstrap size={50} />,
     name: "Bootstrap",
-    level: "50",
   },
   {
-    icon: <SiHeroku />,
+    icon: <SiHeroku size={50} />,
     name: "Heroku",
-    level: "60",
   },
 ];
 const Resume = () => {
@@ -128,7 +107,6 @@ const Resume = () => {
         </div>
         <div className="resume-languages">
           <h5 className="resume-language__heading">Tools and Libraries</h5>
-
           <div className="resume-language__body mt-3">
             {tools.map((tool, i) => (
               <Bar {...tool} key={i} />
